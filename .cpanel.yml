@@ -1,8 +1,0 @@
----
-deployment:
-  tasks:
-    # To test on a subdomain first, change public_html/ to that subdomain's folder.
-    - export DEPLOYPATH=/home/iqfibswi/public_html/
-    - /bin/cp index.html $DEPLOYPATH
-    - /bin/mkdir -p ${DEPLOYPATH}images
-    - /bin/cp -R images/. ${DEPLOYPATH}images/
