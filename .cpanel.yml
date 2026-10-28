@@ -1,0 +1,9 @@
+---
+deployment:
+  tasks:
+    # Replace CPANEL_USERNAME with your cPanel username before the first deploy.
+    # To test on a subdomain first, change public_html/ to that subdomain's folder.
+    - export DEPLOYPATH=/home/CPANEL_USERNAME/public_html/
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/mkdir -p ${DEPLOYPATH}images
+    - /bin/cp -R images/. ${DEPLOYPATH}images/
