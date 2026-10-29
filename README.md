@@ -2,8 +2,10 @@
 
 Static website for iq-fitness.co.uk, built by Ladega Studio.
 
-- `index.html` – the homepage
-- `images/` – photos and logo
+- `index.html` – the homepage content
+- `css/styles.css` – all styling, written mobile-first (phone layout first, then 640px, 900px and 1100px breakpoints)
+- `js/main.js` – mobile menu and booking form
+- `images/` – photos and logo; `-600` versions are lighter copies for phones
 - `.github/workflows/deploy.yml` – publishes the site to the live hosting
 
 ## Working on the site
