@@ -1,4 +1,4 @@
-// IQ Fitness – small scripts for the menu and the booking form.
+// IQ Fitness – mobile menu.
 
 // Mobile menu: opens and closes the navigation on phones.
 (function () {
@@ -19,21 +19,5 @@
   // Close the menu after tapping a link.
   nav.addEventListener('click', function (e) {
     if (e.target.closest('a')) setOpen(false);
-  });
-})();
-
-// Booking form: opens WhatsApp with the visitor's details ready to send.
-(function () {
-  var form = document.getElementById('book-form');
-  if (!form) return;
-
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    var msg =
-      'Hi, I would like to book a free class.\n' +
-      'Name: ' + form.elements.name.value + '\n' +
-      'Mobile: ' + form.elements.phone.value + '\n' +
-      'Class: ' + form.elements.venue.value;
-    window.location.href = 'https://wa.me/447530049333?text=' + encodeURIComponent(msg);
   });
 })();
