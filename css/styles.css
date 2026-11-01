@@ -171,7 +171,8 @@ p { margin: 0; }
 .kids__text .btn-row { margin-top: 6px; }
 .kids__photos { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 .kids__photos img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 12px; }
-.kids__photos .kids__main { grid-column: 1 / -1; aspect-ratio: 4 / 3; object-position: 50% 70%; }
+.kids__photos .kids__wide { grid-column: 1 / -1; aspect-ratio: 16 / 9; object-position: 50% 60%; }
+.kids__photos .kids__main { grid-column: 1 / -1; aspect-ratio: 4 / 3; object-position: 50% 55%; }
 
 /* ---------- Coach ---------- */
 .coach { display: grid; gap: 28px; }
